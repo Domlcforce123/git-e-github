@@ -1,0 +1,1015 @@
+<link rel="stylesheet" href="box.css">
+
+<h1>
+    Posicionando o Foguete
+</h1>
+
+<h2>
+    <ol>Layouts</ol>
+    <h3>Descrição</h3>
+    <h4>Page Layouts</h4>
+Nessa aula vamos ver alguns dos métodos usados para posicionar os elementos na tela.
+
+<li>Tables</li>
+<li>Floats e clear</li>
+<li>Frameworks e Grid Systems</li>
+<li>Flexbox</li>
+<li>Grid</li>
+</h2>
+
+<h2>
+    Position
+</h2>
+
+<h3>Posicionamentos</h3>
+Controla onde, na página, o elemento irá ficar, alterando o fluxo normal dos elementos.
+
+<ol>
+    Name: position
+
+</ol>  
+<ol>
+ Value:  static| relative 
+ | absolute 
+ | fixed
+
+</ol> 
+
+Lembrando que o fluxo normal dos elementos é ficar um abaixo do outro, a não ser no caso de elementos inline, que ficam
+um ao lado do outro.
+
+<h2>
+    Static
+</h2>
+
+    Por padrão os elementos são static. Isso significa que os elementos irão seguir o fluxo normal do HTML.
+
+
+
+<h2>
+    Relative
+</h2>
+
+O position indica onde o elemento vai ser posicionado na página. Ao usar o position podemos adicionar outras propriedades como top, right, bottom, left e z-index, que vão determinar o posicionamento final do elemento.
+
+Quando o position é relative os elementos são deslocados do seu posicionamento normal, mas sem afetar o posicionamento de outros elementos da página.
+<ol>
+    <h3>
+        HTML
+    </h3>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+</ol>
+
+<ol>
+    <h3>
+        CSS
+    </h3>
+</ol>
+
+<!-- 
+    esse daqui é o exemplo no css
+    .box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+  }
+  
+  .box1 {
+    background-color: red;
+    position: relative;
+    left: 100px;
+    top: 80px
+  }
+  
+  .box2 {
+    background-color: green;
+  }
+  
+  .box3 {
+    background-color: blue;
+  } 
+-->
+
+<h2>
+    Absolute
+</h2>
+
+Quando o position é absolute o elemento é deslocado saindo do fluxo normal. O elemento de position absolute é posicionado em relação ao seu parent element mais próximo. Se esse elemento "pai" não existir, ele será posicionando em relação ao bloco contendo a raiz do elemento.
+
+<ol>
+    <h3>
+        HTML
+    </h3>
+    <div class="box1 box"></div>
+<div class="box2 box"></div>
+<div class="box3 box"></div>
+</ol>
+
+<ol>
+    <h3>
+        CSS
+    </h3>
+    <!-- 
+        .box {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 8px;
+      }
+      
+      .box1 {
+        background-color: red;
+        position: absolute;
+        left: 100px;
+        top: 80px
+      }
+      
+      .box2 {
+        background-color: green;
+      }
+      
+      .box3 {
+        background-color: blue;
+      } 
+    -->
+</ol>
+
+
+<h2>
+    Fixed
+</h2>
+
+Quando aplicado o position fixed é como se criasse um elemento flutuante que fica fixo na página, independente do scrolling feito.
+
+<h2>
+    Element Stacking
+
+</h2>
+
+É o empilhamento de elementos. Podemos usar o z-index para determinar a ordem da posição do elemento. Quanto maior o z-index, mais "acima" vai aparecer o elemento.
+
+<ol>
+    <h3>
+        HTML
+    </h3>
+    <div class="box1 box"></div>
+    <div class="box2 box"></div>
+    <div class="box3 box"></div>
+</ol>
+
+<ol>
+    <h3>
+        CSS
+    </h3>
+    <!-- 
+        .box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.box1 {
+  background-color: red;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  z-index: 3;
+}
+
+.box2 {
+  background-color: green;
+  position: absolute;
+  left: 10px;
+  top: 10px
+}
+
+.box3 {
+  background-color: blue;
+  position: absolute;
+  left: 15px;
+  top: 15px
+}
+     -->
+</ol>
+
+<h2>
+    Flex
+</h2>
+
+Nessa aula vamos ver uma introdução de como posicionar elementos usando o CSS Flexbox
+
+<h3>
+    Flexbox
+</h3>
+Nos permite posicionar os elementos dentro da caixa
+Controle em uma dimensão (horizontal ou vertical)
+Alinhamento, direcionamento, ordenar e tamanhos
+<!-- 
+    div.parent {
+	display: flex;
+}
+ -->
+
+ <h3>Flex-direction</h3>
+Qual a direção do flex: horizontal ou vertical
+<ol>row | column</ol>
+
+<h3>Alinhamento</h3>
+<ol>justify-content</ol>
+<ol>align-items</ol>
+<h4>HTML</h4>
+
+<div class="container">
+  <div class="box blue"></div>
+  <div class="box red"></div>
+  <div class="box green"></div>
+</div>
+
+<h4>CSS</h4>
+<!-- 
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+ -->
+
+ <h2>
+    Grid/Grid ou Flexbox
+
+ </h2>
+
+ Podemos usar o Display Flex e Display Grid ao mesmo tempo.
+
+
+
+<!-- esta no arquivo body e grid -->
+
+
+
+<h1>
+  Introdução font-properties
+</h1>
+
+A tipografia transmite uma mensagem, por exemplo, quando queremos dar uma ênfase no texto nós podemos escrever o mesmo em negrito.
+
+Nós podemos transmitir uma mensagem diferente dependendo do estilo que escrevemos o texto.
+
+Algumas das propriedades de fonts do CSS que podem nos ajudar a transmitir uma mensagem através dos textos da página são:
+
+<ol>
+  <ol>font-family</ol>
+  <ol>font-weight</ol>
+  <ol>font-style</ol>
+  <ol>font-size</ol>
+</ol>
+
+<h2>
+  font-family 
+</h2>
+
+Tipo de fonte de um elemento
+Lista de fontes e ordem de prioridade
+inclui fallback font
+<p>
+p {
+  font-family: "Times New Roman", Times, serif;
+}
+</p>
+Alguns tipos de fonts:
+
+serif (com serifa)
+<img src="https://xesque.rocketseat.dev/forum/1630332988721-image.png" alt="serifa">
+
+<p>
+  sans-serif (sem serifa)
+
+</p>
+<img src="https://xesque.rocketseat.dev/forum/1630333023823-image.png" alt="sem serifa">
+<!-- fallback é o opcional que voce da caso ele não acha o caminho usando o ; e escrevendo o o outro elemento 
+exemplo
+
+fui compra banana; maçã
+
+ai caso não tenha banana se compra a maçã
+
+XDDDDD
+
+-->
+<h2>
+  font-weight
+</h2>
+
+Peso da fonte
+<p>Valores: normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900</p>
+Dependendo da família da fonte não conseguimos utilizar todos os pesos de fonte:
+<h2>
+  p {
+  	font-weight: bold;
+  }
+</h2>
+<p>Referência</p>
+
+<p><a>www.w3.org/TR/css-fonts-3/</a></p>
+
+<h2>
+  Font-style
+</h2>
+
+É o estilo da fonte
+<p>Valores: normal | italic | oblique</p>
+Os valores que podem ser aplicados dependem da fonte usada
+<p>
+  span {
+  	font-style: italic;
+  }
+</p>
+
+<h2>
+  Font-size
+</h2>
+
+Tamanho da fonte
+<p>
+  p {
+  	font-size: 18px;
+  }
+</p>
+
+
+<h2>
+  Web-fonts(caso use link tem que linka no head)
+</h2>
+
+<p>Fontes do sistema x Fontes da web</p>
+Fontes do sistema são as fontes que estão instaladas na máquina do usuário e nem sempre o cliente vai ter instalado as
+fontes usadas no projeto e isso pode fazer com que os estilos dos textos não sejam aplicados corretamente, mas para
+resolver esses casos podemos preparar nossas fonts para web ou usar fontes da web.
+
+<ol>
+  Como usar fontes para web?
+<ol>
+    @font-face
+
+</ol>  <ol> @import</ol>
+  <ol>link</ol>
+</ol>
+<p>
+  Referência
+
+</p>  <p>
+  <a href="https://fonts.google.com/">fonts.google</a> e tambem <a href="https://css-tricks.com/snippets/css/using-font-face-in-css/">css trik</a>
+
+</p>  
+
+
+<h1>
+  Font-variant e font-stretch
+</h1>
+
+<h2><p>Font Variant</p></h2>
+<p>Faz variações na apresentação da fonte</p>
+<p>
+  p {
+  	font-variant: small-caps;
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant">CSS-font-variant</a>
+
+<p>Font Stretch</p>
+Alargamento ou encolhimento da fonte
+<ol>Aceita palavras-chaves como: expanded, condensed, normal</ol>
+<ol>Aceita porcentagens de 50% a 200%</ol>
+<p>Essa propriedade não vai funcionar em todas as fontes</p>
+<p>
+  p {
+  	font-stretch: expanded;
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch">CSS-font-stretch</a>
+
+<p>Referência</p>
+<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals">CSS Styling text Fundamentals</a>
+
+<h2>
+  Letter e word-spacing
+</h2>
+
+<p>Letter spacing</p>
+Define o espaçamento entre os caracteres
+<p>
+  p {
+  	letter-spacing: 4px;
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing">CSS letter spacing</a>
+
+<p>Word spacing</p>
+Define o espaçamento entre palavras
+<p>
+  p {
+  	word-spacing: 1em;
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing">CSS word spacing</a>
+
+<h2>Line-height e text-transform
+</h2>
+
+<p>Line height</p>
+<ol>Define os espaços entre linhas</ol>
+<ol>Pode ser com unidades ou sem unidades de medida</ol>
+<ol>Valores comuns: 1.5 ou 2</ol>
+<p>
+  p {
+  	line-height: 1.5;
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/line-height">CSS line height</a>
+
+<p>Text transform</p>
+<ol>Transformação do texto</ol>
+<ol>Valores podem ser: none | capitalize | uppercase | lowercase | full-width | full-size-kana</ol>
+<p>
+  p {
+  	text-transform: uppercase;
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">CSS text transform</a>
+
+<h2>
+  Text-decoration
+</h2>
+<p>Text decoration</p>
+Aparência decorativa de um texto
+<ol>line: underline | overline | line-through</ol>
+<ol>podemos aplicar mais de 1 valor</ol>
+<ol>style: wavy | dotted | double | dashed | solid</ol>
+<ol>color: <color> values</ol>
+<p>
+  h1 {
+  	text-decoration: underline; /* shorthand */
+  }
+</p>
+
+<p>
+  p {
+    text-decoration: wavy overline blue; /* shorthand */
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration">CSS text decoration</a>
+
+<h2>
+  Text-align
+</h2>
+
+<p>Alinhamento de um texto</p>
+<p>Valores: start | end | left | right | center | justify | match-parent</p>
+<p>
+  p {
+  	text-align: center;
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">CSS text align</a>
+
+
+<h2>Text shadow</h2>
+<ol>Sombra aplicada a um texto</ol>
+<ol>Permite múltiplos valores</ol>
+<p>
+  p {
+    text-shadow: 1px 1px 1px red,
+  	       2px 2px 1px green; /* offset-x | offset-y | blur-radius | color */
+  }
+</p>
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow">CSS text shadow</a>
+
+<h2>
+  Shorthand
+</h2>
+
+Podemos usar o shorthand font para determinar os seguintes valores: font-style, font-variant, font-weight, font-stretch, font-size, line-height e font-family
+<p>
+  p {
+    font: italic normal bold normal 3em/1.5 Helvetica, Arial, sans-serif;
+  }
+
+</p>  
+
+<h1>
+  Formulários de outro planeta
+</h1>
+
+<h3>
+  Para que serve?
+</h3>
+<ol>
+  <li>
+    capturar dados de entrada (input)
+  </li>
+  <li>
+    interação
+  </li>
+  <li>
+    Controle
+  </li>
+</ol>
+
+<h2>
+  Form entre <>
+</h2>
+<ol>
+  <li>
+     elemento que definirá um formulário
+  </li>
+  <li>
+    é um container estilo <section> <footer >
+   </li>
+
+</ol>
+
+<h3>
+  atributos basicos 
+</h3>
+<p>atributos basicos</p>
+<ol>
+  action
+</ol>
+<ol>
+  method  temos o get e o post get é q mostra na barra de navegação o post não 
+  <!-- form dentro de form NÂO FAÇA -->
+</ol>
+
+<h2>
+  Fieldset legend
+</h2>
+
+<h2>
+  exemplo
+</h2>
+
+<form action="">
+  <button>enviar</button>
+  <fieldset>
+    
+    <legend>contato</legend>
+    <label for="nome"></label>
+  </fieldset>
+</form>
+
+
+
+<h2>
+  Label
+</h2>
+<label for="">
+  name:
+  <input type="text">
+</label>
+<h3>
+  button 
+</h3>
+
+<button>butão tem atributos </button>
+
+
+<h2>Datalist</h2>
+
+<input type="text" 
+list="pokemon" 
+placeholder="escolha um pokemon">
+
+<datalist id ="pokemon">
+  <option>charmander</option>
+  <option>squirtle</option>
+  <option>bulbassauro</option>
+  
+</datalist>
+ <p>para ver os compativeis</p> 
+<a href="http://caniuse.com">caniuse</a>
+
+<h1>
+  tags e entrada de dados
+</h1>
+
+<h2>
+  input 
+</h2>
+<ol>
+  atributos
+</ol>
+<li>
+  type
+</li>
+<li>
+  name
+</li>
+<li>
+  id
+</li>
+<h3>exemplos abaixo</h3>
+<p><input type="text"></p>
+<p><input type="date"></p>
+<p><input type="number"></p>
+<p><input type="email"></p>
+<p><input type="password"></p>
+<p><input type="password"></p>
+<p><input type="file"></p>
+
+<p>mais em:</p>
+
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input">HTML Element input</a>
+
+<h2>
+  Input atributos 
+</h2>
+placeholder usar em todos os possiveis
+
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input">HTML Element input</a>
+
+<h2>
+  criando um formulario
+</h2>
+
+<h1>Guia Estelar JavaScript
+</h1>
+
+<h2>
+  Sintaxe
+</h2>
+Nesta aula vamos entender melhor a sintaxe, que é o jeito de escrever código para ele ser entendido pela máquina, que todas as linguagens tem e que engloba 82% dos erros de iniciantes em programação.
+<ol>
+  toda linguagem tem sintaxe
+</ol>
+<ol>
+  uma boa comunicação necessita de uma boa sintaxe
+</ol>
+<ol>
+  82% dos erros para inicantes de programação
+</ol>
+
+<h2>
+  Maneiras de executar o JavaScript
+</h2>
+Nesta aula vamos citar 3 maneiras de executar códigos em JavaScript, a primeira maneira é pelo navegador, clicando na
+tecla F12 em qualquer website o menu do DevTools, que são ferramentas para desenvolvedores, na aba console podemos
+executar código JavaScript. A segunda forma é pela aplicação web CodePen, abrindo o endereço codepen.io/pen você
+encontra um ambiente que se pode utilizar codigo HTML, CSS e JavaScript. Também pode-se usar o Visual Studio Code,
+criando um arquivo HTML com a tag
+ e colocando o código dentro.
+
+ <h2>
+  Adicionando arquivos JS
+ </h2>
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  <script src="./aula 2.js"></script>
+ </body>
+ </html>
+
+
+
+ <h2>
+  Comentários
+ </h2>
+Para comentar seu código no Javascript, pode se usar // antes da linha, para definir aquela linha inteira, para comentar
+mais de uma linha, pode se usar um /* no começo do comentário e um */ no final. Comentários não são executados, mas são
+mostrados para quem visualiza o código.
+
+<h1>tipos de dados
+</h1>
+<h2>
+  Introdução
+</h2>
+Para entendermos mais sobre os tipos de dados, podemos compará-los com elementos da gramática, para aprendermos precisamos saber como escrever, os significados e continuar aprendendo para expandir nosso vocabulário. A dinâmica do aprendizado nesse módulo vai consistir em conceitos e escrita, deixando a aplicação para um outro momento, vamos aprender os tipos de dados mais utilizados.
+
+<h3>
+  String
+</h3>
+O tipo de dados String consiste em uma cadeia de caracteres, ou seja, textos. Para denotar string no JavaScript são usados aspas duplas ( " " ), aspas simples ( ' ' ) e template literals ou template strings ( ), template literals permitem textos multilinhas e expressões de linguagem com os caracteres ${ }, por exemplo: console.log(A soma de duas unidades é ${1+1}), já as outras não, por exemplo: console.log("Isso é um texto").
+
+<h3>
+  number
+</h3>
+No JavaScript temos 4 tipos de números, os inteiros (por exemplo: 13), os reais ou float (por exemplo: 83.1), o Not a Number (NaN) e o infinito (Infinity).
+
+
+<h3>
+  Boolean
+</h3>
+No JavaScript, um dado boolean pode ter apenas 2 valores, verdadeiro (true) e falso (false).
+
+<h3>
+  Undefined vs null
+</h3>
+No JavaScript temos o tipo de dados Undefined, que representa valores indefinidos, e o tipo de dados null, que são muitas vezes confundidos. A diferença dos dois é que null é considerado como um objeto vazio, ou seja, algo indefinido não existe, já algo null existe mas não tem valor algum.
+
+
+<h3>
+  Object
+</h3>
+O tipo de dado Object é estrutural, contendo atributos, ou propriedades, e métodos, ou funcionalidades. Um objeto é denotado com os caracteres { }, atributos e métodos com nome: valor . Por exemplo { nome: "João", idade: 20 }.
+
+<h3>
+  Array
+</h3>
+O tipo de dados Array, ou vetor, também é estrutural, e consiste em uma lista de dados agrupados, um Array é denotado com os caracteres [ ] , por exemplo: [ "Leite", "Ovos", "Manteiga", 1, 2 ] .
+
+<h3>
+  Conclusão
+</h3>
+Conforme o ECMAScript Standard (o padrão do orgão que padroniza o JavaScript) <h4>temos 9 tipos de dados organizados em 4 categorias:</h4> 
+
+<ol>Primitive,</ol>
+<ol> Primitive Value,</ol> <ol>Structural</ol> <ol>Structural Primitive.</ol> 
+
+<p><h4>Os primitivos são:</h4></p> 
+
+<!--
+   são aqueles que vão ser sempre como foram escritos exemplo : ABC abc Abc aBc .... 
+-->
+<ol>String,</ol> 
+<ol>Number, </ol>
+<ol>Boolean, </ol>
+<ol>Undefined, </ol>
+<ol>Symbol, </ol>
+<ol>BigInt.</ol>
+
+ <p><h4>Os estruturais são:</h4></p>
+  <ol>Object</ol> 
+   <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects"><ol> Function</ol></a>
+  
+  Além destes, temos o primitivo estrutural que consiste apenas no dado null
+
+
+  <h1>
+    variaveis
+  </h1>
+
+  <h2>
+    Conhecendo as variáveis
+  </h2>
+  Para entender variáveis podemos pensar nelas como nomes simbólicos para algum valor, atalhos de código ou
+  identificadores. Para criar uma variável, podemos usar uma das palavras reservadas: var, let e const, por exemplo: var
+  clima = "quente", onde var é a palavra que simboliza a criação da variável, clima é o nome da variável, o sinal de igual
+  denota que a variável está recebendo um valor e "quente" é a string que está sendo recebida. As variáveis declaradas com
+  "var" e "let" podem ter seu valor mudado, já a const não.
+
+
+  <h4>Variaveis</h4>
+
+    <p>nomes simbolico para receber algum valor</p>
+    <p>atalho de código</p>
+    <p>indentificadores</p>
+    <ol><h4>3 palavras reservadas para criar uma variavel</h4></ol>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+
+<!-- <script>
+  var clima = "Quente"
+  clima = "Frio"
+  console.log(clima)
+
+
+  let clima = "Quente"
+  clima = "Frio"
+  console.log(clima)
+
+
+  
+</script> -->
+
+
+
+<h2>
+  Tipos dinâmicos
+</h2>
+
+O JavaScript é uma linguagem fracamente tipada e dinâmica, ou seja, ao declarar uma variável não é necessário estabelecer um tipo específico e o tipo do valor da variável pode mudar conforme o código.
+
+
+<h2>
+  Scope e var
+</h2>
+
+O Scope ou Escopo determina a visibilidade de uma variável em um código, e para entender scope precisamos primeiramente entender block statement, que é o código presente dentro de chaves. O escopo do var é global, ou seja, uma variável declarada com var poderá ser usada em todo o código.
+
+
+
+<!-- <script> 
+
+ <script>
+    //var é global e, também local
+    //o JavaScript utiliza hoisting = pegar o valor de baixo e jogar para cima
+    console.log('>existe xesque antes do bloco?' , xesque)
+  
+    {
+      var xesque = false
+    }
+  
+    console.log('>existe xesque depois do bloco?' , xesque)
+  
+   </script>
+
+  var é dentro e fora do scopo   scoopo = {} -->
+
+
+ <h2>
+  Scope let e const
+</h2>
+
+Diferentemente de var, const e let são variáveis com escopo local, ou seja, só são visíveis no escopo onde foram criadas e em escopos interiores ao de criação. Em uma variável let, porém, pode-se alterar o valor em um escopo e o valor irá persistir no escopo de criação.
+
+<!-- 
+  <script>
+    // const e let são locais e só funcionam no escopo onde foi criada
+    //só vão funcionarem dessa forma aqui
+    {
+      let xesque = false // ou const
+
+      console.log('>existe xesque antes do bloco?' , xesque)
+      console.log('>existe xesque depois do bloco?' , xesque)
+    }
+  
+    
+  
+   </script>
+
+ -->
+
+
+ <h2>
+  Nomeando variáveis
+ </h2>
+
+ Para nomearmos variáveis corretamente e de um jeito inteligente, precisamos saber de algumas coisas, como: JavaScript é case-sensitive (sensível à letras maiúsculas e minúsculas) e aceita a cadeia de caracteres Unicode, podendo receber acentuações. Em um nome de variável em JS você pode: Iniciar com caracteres especiais, iniciar com letras e colocar acentos, lembrando sempre que letras maiúsculas e minúsculas fazem a diferença. Em contraste, você não pode: Iniciar com números e colocar espaços vazios. Idealmente você deve colocar nomes significativos, que fazem sentido na aplicação, explicando o que a variável é, usando camel case, onde a primeira palavra de uma frase é toda minúscula, e as subsequentes não se separam por espaço e tem a primeira letra maiúscula, por exemplo: oNomeDessaVariável, e usar nomes em inglês.
+
+ <p>JS é case-sensitive (sensivel ao caso)</p>
+<p>JS aceita a cadeia de caracteres unicode</p>
+
+
+<p>Posso</p>
+<ol>iniciar com esses caracteres especiais $_</ol>
+<ol>inciar com letras</ol>
+<ol>colocar acentos</ol>
+<ol>letras maisculas e minusculas fazem diferença</ol>
+
+<p>Não posso</p>
+<ol>Iniciar com numeros</ol>
+<ol>colocar espaços vazios nos nomes</ol>
+
+<p>Ideal</p>
+<ol>criar nomes que fazem sentido</ol>
+<ol>que explique o que a variavel é ou faz</ol>
+<ol>camelcase</ol>
+<ol>snake_case</ol>
+<ol>escrever em ingles</ol>
+
+
+<h2>
+  Declaration assignment var
+</h2>
+
+Para declarar uma variável podemos usar var, let e const, e para atribuírmos valores à essa variável utilizamos o
+caractere =, e para vermos o tipo dessa variável podemos utilizar a função console.log(typeof variavel).
+
+
+<script>
+  //variavel e tipos de dados
+  // declarar é colocar o scoope e colocar um nome
+  var name //exemplo 
+
+  // assignment or atribuir valores 
+  name = "dom"
+
+  // que tipo de dado foi colocado na variavel
+
+  console.log (typeof name)
+
+ //let age = 25 // tipo de dado number 
+  // let IsHuman = true // tipo de dado bullian
+        // tambem pode ser feito desta forma
+
+        let age, IsHuman
+
+        age = 25
+        IsHuman = true
+
+
+ console.log (name,age,IsHuman)
+ 
+
+</script>
+
+
+<h2>
+  Agrupando declarações
+</h2>
+
+É possível agrupar diversas declarações de variáveis em JavaScript usando let, const ou var e colocando uma vírgula
+entre os nomes das variáveis a serem criadas, por exemplo: let name, age, isStudent. Para mostrar mais de uma variável
+no console.log também é possível usando vírgula, por exemplo: console.log(name, age, isStudent).
+
+<h2>
+  Concatenando e interpolando variáveis
+</h2>
+
+É possível concatenar strings com o operador +, por exemplo: console.log('o ' + name + ' tem ' + age + ' anos.') desta
+maneira as variáveis serão convertidas em texto e o que será mostrado será um texto com o nome e a idade que foram
+estabelecidas no código. Uma outra maneira de escrever um texto com variáveis é por meio da interpolação com template
+literals, usando crase para o texto e ${} para denotar uma variável, por exemplo console.log(O ${name} tem ${age} anos.)
+o resultado deste comando será o mesmo texto do anterior.
+
+<!-- 
+<script>
+  // exemplo da aula
+  /*
+  MULTIPLOS ARGUMENTOS NA FUNÇÃO 
+  CONSOLE.LOG(NAME, AGE, IsHuman)
+
+  escrita de texto + variaveis
+  concatenando os valores
+
+  console.log('o' + name 'tem' + age 'anos.')
+
+  interpolando os valores com templates literals or template strings (outro modo de fazer)
+
+  console.log(`o ${name} tem ${age} anos.`) não esquece de coloca o crase
+
+</script>
+ -->
+
+ <script>
+  // object
+const person = {
+    name: 'dom',
+    age: '34',
+    weigh: '91.9',
+    IsAdmin: true
+
+}
+ </script>
+
+
+<h2>
+  Arrays
+</h2>
+
+Para criarmos um vetor utilizamos [ ] envolvendo os valores, por exemplo: const animals = [ "Lion", "Monkey" ], para
+acessar esses valores usamos a posição do valor no vetor, começando por 0, por exemplo: console.log(animals[0]). Para
+descobrirmos o número de posições de um vetor qualquer, podemos utilizar a propriedade length, por exemplo:
+animals.length.
+
+
+<script>
+  // arrays
+
+  const animals = [
+    'Lion',
+    'Monkey',
+    'cat'
+    ]
+    console.log(animals)
+</script>
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
