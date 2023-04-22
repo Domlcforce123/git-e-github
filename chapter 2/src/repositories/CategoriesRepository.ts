@@ -1,0 +1,8 @@
+
+
+class CategoriesRepository{
+
+
+}
+
+export  { CategoriesRepository }

@@ -1,0 +1,1974 @@
+<!-- assim q faz comentario    CTRL+; = transforma em comentario ou distransforma -->
+
+
+<!-- <h1>sadasdas</h1> o simbolo pra esquerda e pra tireita é tag <>  com a barra/ é fechamento
+   -->
+
+
+<!-- Booleano é sim ou não -->
+
+<!-- sempre usa aspas duplas
+ para fazer link é tag <a> 
+--> ""
+<!-- atributos globais mais utilizados  
+            - class  : adiciona uma classe, podendo usar stilo css/ acessar js
+            - contenteditable : transforma em editavel ou não mas não altera o escrito
+            - data-* : usado em java e css;logicas js
+            - hidden  : esconder coisas
+            - id  : um por pagina, usar em outras linguagem dps(facilita achar )
+            - style : mudar cor do texto
+            - tabindex : direciona o tab pela numeração que colocou
+            - title : definir titulo
+            outros em  : developer.mozilla.org/pt-BR/docs/web/html/Global_atributes 
+
+            aninhamento é colocar uma tag dentro da outra(cuidado ao fechar a tag) 
+            hierarquia e do q começa para o que tem dentro do texto
+
+            o fluxo é como vai ser lido as tags
+
+            posicionamento dos elementos seria algumas tags não alteram tudo e outras sim
+            ""
+
+            sempre que for escrever os textos tem q usar tag para fazer quebra de linha porque o vscode não le como o word
+
+
+
+
+
+
+        -->
+
+        
+<title>aqui é o titulo</title>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, laboriosam quam error assumenda ad corrupti
+   alias cum praesentium sunt hic reiciendis eligendi? Dolore doloremque repellat sint veniam nemo odit temporibus.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic voluptas illo unde quam, reiciendis, distinctio nihil
+   impedit quas excepturi sit consequatur accusamus culpa iure magnam maxime minima consectetur et reprehenderit</p>
+<a href="http://google.com.br">clica aqui caralho</a>
+
+
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <!--aqui voce diz para a pagina que vai usar a maioria dos caracteres usando o char = character e o set = setar  -->
+   <title> aqui
+      <!-- aqui em (title) voce edita o nome da pagina -->
+   </title>
+</head>
+
+<body>
+   <!-- body é o que o cliente ve na pagina -->
+   <h1>aqui é o titulo</h1>
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde enim autem impedit provident ex at corrupti ab
+      maiores consequatur minus. Sunt illum consectetur recusandae atque iste laboriosam adipisci ullam doloremque?
+   </p>
+   <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, aliquam delectus! Expedita mollitia esse
+      repellendus qui fugit pariatur sequi nostrum est consectetur maxime quos vero similique, fugiat nesciunt officia
+      dolor.
+   </p>
+</body>
+
+</html>
+<!-- ou pra facilitar usa o emmet  -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- lang:en é a linguagem -->
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- esse acima é para configurar para qualquer aparelho poder ver a pagina (sempre usar) -->
+   <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<!-- exemplo : só coloca a ! + TAB que ele faz o resto -->
+
+Semantica
+<!--  dar significado 
+elementos semanticos(sempre faça perguntas sobre o que esta usando) -->
+
+<!-- CABEÇALHOS E PARAGRAFOS -->
+
+sobre min
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda blanditiis veritatis amet soluta, eveniet modi atque
+odio in illo aut consectetur, excepturi quae accusantium unde consequuntur, molestiae itaque tempore esse?
+
+nascimento
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ex quaerat laudantium tenetur? Sapiente facilis minus
+assumenda culpa, error odit optio officiis omnis rem cumque temporibus, nesciunt inventore ipsam quos.
+
+
+trabalho
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quidem provident incidunt ab consequatur atque ipsa
+eum sunt sint tenetur similique, quis, aliquam, quisquam a obcaecati! Dolore ea earum suscipit?
+
+saiba mais
+
+
+Listas no HTML são feitas da seguinte forma:
+
+<li></li> — colocar os elementos da lista. <ul></ul> — para uma lista não ordenada.<ol></ol> — para uma lista ordenada.
+<h1>Suco detox</h1>
+<h2>Ingredientes:</h2>
+
+<ol>
+   <li>3 folhas de couve;</li>
+   <li>1 laranjas;</li>
+   <li>1 pedacinho gengibre;</li>
+   <li>300 ml de água;</li>
+   <li>Adoçante a gosto;</li>
+   <li>Gelo a gosto.</li>
+</ol>
+
+
+<h1>CITAÇÕES</h1>
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+   O <strong>Elemento HTML <code>&lt;blockquote&gt;</code> </strong> (ou <em>HTML Block
+      Quotation Element</em>) indica que um texto externo foi citado.
+</blockquote>
+
+<p>De acordo com <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+      <cite>página MDN blockquote</cite></a>:
+</p>
+
+<p>O elemento quote — <code>&lt;q&gt;</code> — é <q
+      cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">usado para citações curtas que não precisam de
+      parágrafos ou quebras de linha.</q> -- <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+      <cite>MDN q page</cite></a>.</p>
+<blockquote></blockquote> — para uma citação que você queira deixa maior, tendo uma estilização mais diferente.
+<code></code> — mostra que é um código
+
+cite — atributo usado para citar a url.
+
+<cite></cite> — tag usada para colocar o citar link direto no texto.
+
+<q></q> — citação curtas com aspas.
+
+<h1>ABREVIAÇÕES</h1>
+Elemento muito comum encontrado na web é a de abreviação, mas de alguma forma queremos mostrar a palavra inteira.
+
+<p>Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web.</p>
+Se colocarmos o mouse em cima da abreviação, teremos a palavra inteira.
+
+<h1>DETALHES DE CONTATO</h1>
+A tag usada para apenas colocar detalhes de contato é a tag <address></address>, não endereço em si, mas por exemplo o
+autor da página.
+
+<address>
+   <p>Mayk Brito <br>
+      <strong>Campo Grande, MS</strong>
+   </p>
+</address>
+
+<H1>LISTA DE DESCRIÇÃO</H1>
+Usado para marcar uma lista de itens e suas descrições.
+
+<h2>Glossário</h2>
+<dl>
+   <dt>Hypertext</dt>
+   <dd>É um hiper texto com possibilidades...</dd>
+
+   <dt>Markup</dt>
+   <dd>Marcação do texto</dd>
+
+   <dt>Languague</dt>
+   <dd>Linguagem com sua semântica e sintaxe....</dd>
+</dl>
+<dl></dl> — tag para lista de descrições.<dt></dt> — tag para o termo da descrição.<dd></dd> — tag para descrição.
+
+<H1>REPRESENTAÇÃO DE CODIGOS</H1>
+Para representar códigos usamos as tags:
+
+<code></code> — muda a cor do conteúdo para representar código.
+
+<pre></pre> — tag para criar um bloco de código, mantém os espaços em branco.
+<pre>
+    <code>
+        &lt;
+    </code>
+</pre>
+
+<h1>ELEMENTO GENERICO</h1>
+<div class="cart">
+   <span>Camiseta</span>
+   <span>r$ 99,00</span>
+</div>
+<div></div> — tag usada para agrupar conteúdo.
+<span></span> — tag usada para agrupar texto, em uma ideia mais de linha.
+
+<h1>Conhecendo a tag âncora</h1>
+
+<!-- São os famosos hyperlinks, e a tag usada para se criar um é a <a href=" ></a>, responsável por ligar várias páginas.
+
+Em sua anatomia ele recebe atributos globais (title, id ,class,...) e o mais importante href, a referência, podendo ser url completa, fragmento, email, telefone e mais diversos outros. há também o atributo de download, que é download="", usado junto do href="",por exemplo, se você colocar o link de uma imagem no href="" com o atributo de download, a imagem será baixada ao invés de irmos até a página e se colocarmos um valor no atributo de download, ele irá dizer como você vai salvar o arquivo.
+
+Por fim temos o atributo target="", que irá dizer qual o alvo do nosso disparo, ou seja, se não tivermos o target, quando clicarmos no link, ele vai pegar o mesmo alvo, a mesma página e apenas vai trocar o conteúdo, mas se usarmos o atributo, por exemplo target="_blank", ele vai abrir uma página com o conteúdo. -->
+
+
+<h1> Utilizando a tag âncora
+</h1>
+
+<p>Saiba mais</p>
+<ul>
+   <li><a href="#about">Sobre mim</a></li>
+   <li><a href="#history">História</a></li>
+   <li><a href="#works">Trabalhos</a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius harum quos similique. Debitis, itaque sit veniam
+quam recusandae eligendi aspernatur neque deleniti adipisci provident excepturi voluptate, amet corporis laborum.
+
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et necessitatibus molestias delectus est consequuntur culpa
+voluptatum alias obcaecati, harum id tempore consectetur earum sequi inventore. Laboriosam corporis tenetur vitae
+ratione.
+
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto soluta consequuntur eligendi dignissimos. Ab quas
+voluptatum minima eum nostrum, porro obcaecati mollitia nihil voluptates rerum beatae similique quibusdam delectus
+possimus!
+
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat eum deleniti dolores blanditiis eveniet. Quisquam
+aperiam dolorem quibusdam quas eveniet, illum et. Ab cumque magni hic tempore reprehenderit temporibus facere!
+
+<h2 id="history">História</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore velit ab nisi sit quam quis ea provident. Sequi numquam
+modi, voluptatem velit nulla harum vel quasi nesciunt doloribus est aspernatur.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. A, earum incidunt. Explicabo debitis in quae voluptatem rerum,
+laborum iste illum dolore vel quidem exercitationem nesciunt eligendi deserunt, quos velit <possimus class="lore">
+</possimus>
+
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit nesciunt veritatis pariatur eaque quaerat facere odio
+illum provident, dolore velit tempora modi blanditiis harum ab quis alias atque? Provident, dolor.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero facere quos veniam quibusdam, adipisci soluta quae
+maiores corporis, natus mollitia illo dolore cumque neque tempore animi. Reprehenderit molestias porro mollitia?
+
+orem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum,
+vero quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.
+
+orem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum,
+vero quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.
+
+<h2 id="works">Trabalhos</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et
+harum, vero quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.Lorem
+ipsum dolor sit amet consectetur adipisicing elit. Adipisci nostrum aspernatur rerum aliquid quae aliquam et harum, vero
+quibusdam porro. Iusto architecto soluta reprehenderit dolores enim. Earum provident perferendis sapiente.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis ex inventore ea nemo amet accusantium aliquid dicta
+fugiat quia culpa odio, minima officiis quidem maxime velit corrupti! Dolorem, dicta blanditiis!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur in placeat architecto earum, ullam iusto nesciunt
+nobis perferendis quam, quo consequatur adipisci magni, ipsam asperiores minus odit. Doloribus, dolor expedita.
+Neste exemplo temos os fragmentos, com o navegador aberto, se clicarmos em qualquer um deles, será adicionado uma # e o
+nome do respectivo fragmento, mas como faremos a ligação entre o fragmento e a sua respectiva parte? adicionamos o
+atributo global id="" e colocamos o nome do fragmento dentro dele, o que faz com que sejamos levados até onde está o id
+na página.
+
+<h1>
+   Conteúdos dentro de elemento a
+
+</h1>
+
+Estaremos vendo o que podemos colocar dentro do conteúdo do elemento <a></a>.
+
+Qualquer coisa pode ser colocado, até mesmo outras tags, e mais de uma.
+
+<a href="http://google.com" title="Ir para google">
+   <h1>Google</h1>
+   <p>Claro que posso</p>
+   <img src="https://source.unsplash.com/random" alt="">
+</a>
+
+<h1>Caminhos e URLS
+</h1>
+
+Algo importante que precisamos saber ao criar links é como navegar neles, juntamente em como navegar no caminho dos
+arquivos.
+
+No caso dos links são as URLs, que são sequencia de texto que define onde algo está localizado na web , por exemplo
+https://rocketseat.com.br, ela mostrando que esse endereço levará para algum lugar da web.
+
+No caso dos arquivos, são os seus caminhos, onde, no explorador de arquivos, um recurso está localizado, podendo ser
+imagem, pdf, qualquer arquivo basicamente, abrindo alguns arquivos do nosso projeto no VSCode, usando o elemento a,
+iremos escrever ao invés de https://..., apenas o nome do arquivo, o próprio VSCode possui a inteligência de saber que o
+arquivo está lá, lembrando que também podemos usar os atributos que usamos nas URLs.
+
+<h1>Como navegar pelos diretórios
+</h1>
+Estaremos vendo nesta aula como navegar pelos diretórios.
+
+<a href="hyperlinks.html">arquivo na pasta anterior</a>
+<br>
+<a href="./urls-caminhos.html">arquivo no diretório raiz</a>
+<br>
+<a href="urls-caminhos.html">arquivo na mesma pasta</a>
+<br>
+<a href="outros/conteudo-a-element.html">arquivo na pasta outros, que está na pasta anterior</a>
+Para o mesmo diretório, local, raiz apenas colocamos o nome do arquivo no href.
+
+Para entrar em um diretório colocamos o nome do diretório e /, como no exemplo "outros/conteudo-a-element.html"
+
+Para sair de um diretório colocamos ../ ,ele sairá do diretório, semelhante a sair de uma caixa que está dentro de
+outro.
+
+E por fim o diretório raiz especificamente, usamos apenas ./ , o próprio VSCode irá completar.
+
+Caso você coloque um arquivo que não existe ou mesmo está no diretório errado, vai dar erro de não ter encontrado o
+arquivo.
+
+<h1> Caminhos absolutos vs relativos
+</h1>
+
+No caminho absoluto inclui-se o protocolo e o nome de domínio e sempre apontará para o mesmo local, já que é absoluto.
+Como por exemplo esta URL http://www.rocketseat.com.br/projeto/index.html é absoluto(mesmo não levando a lugar nenhum, é
+apenas um exemplo).
+
+No caminho relativo, é relativo à página, pasta aberta, ou seja, se não tiver irá consequentemente dar erro, apontará
+para lugares diferentes. Como por exemplo apenas google.com.
+
+<h1>teste </h1>
+
+
+<h1>Tabelas</h1>
+
+<!-- Estaremos vendo agora sobre o elemento <table>, que ajuda na organização de dados, criando tabelas.
+
+   Prós
+   
+   Visualização de dados via linhas e colunas.
+   Boa acessibilidade para leitura dos dados 
+   
+   Contras
+
+   Pouco flexível
+   Precisa de estilização para melhor visualização Não usar
+   Para criar seu layout -->
+
+
+<h1>Organizando Tabelas
+</h1>
+Agora vamos dar uma melhor organizada na nossa tabela.
+
+Colocaremos o nosso cabeçalho, na tag <thead></thead> e o nosso corpo no <tbody></tbody> e criaremos o rodapé usando
+<tfoot></tfoot> colocando os dados total.
+
+Por fim poderemos colocar a tag <caption></caption> para descrever sobre o que a nossa tabela é, ficando mais ou menos
+assim:
+
+<table>
+
+   <caption>Pessoas por idade</caption>
+
+   <thead>
+      <tr>
+         <th>Nome</th>
+         <th>Idade</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Mayk</td>
+         <td>35</td>
+      </tr>
+      <tr>
+         <td>Diego</td>
+         <td>25</td>
+      </tr>
+   </tbody>
+   <tfoot>
+      <tr>
+         <td>Total:</td>
+         <td>2 Pessoas</td>
+      </tr>
+   </tfoot>
+
+</table>
+
+<h1>Tabela básica
+</h1>
+
+Para fazer uma tabela básica, apenas precisaremos da tag <table></table>, dentro dela iremos usar a tag <tr></tr>(table
+row) para criar uma linha na tabela, e dentro dela usaremos a tag <th></th> para o cabeçalho.
+
+Depois faremos o tr novamente, só que agora não sendo o cabeçalho, e sim o td.
+
+Ficará da seguinte foram:
+
+<table>
+   <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+   </tr>
+   <tr>
+      <td>Mayk</td>
+      <td>35</td>
+   </tr>
+   <tr>
+      <td>Diego</td>
+      <td>25</td>
+   </tr>
+</table>
+Pronto tabela básica.
+
+<h1>Tabela complexa
+</h1>
+
+
+
+Estaremos criando uma tabela bem mais complexa, com alguns atributos a mais e uma acessibilidade a mais para tabelas
+complexas.
+
+Faremos uma tabela que contém 2 lojas, onde estaremos vendo quantos produtos foram vendidos e produzidos e agruparemos
+por nome dos produtos.
+
+
+
+
+<h1>THead complexa
+</h1>
+
+Veremos como fazer um thead complexo.
+
+<table>
+   <caption>Produzidos x Vendidos por Loja</caption>
+   <thead>
+      <tr>
+         <th rowspan="2"></th>
+         <th colspan="2">Afonso Pena</th>
+         <th colspan="2">Antônia Pereira</th>
+      </tr>
+      <tr>
+         <th>Produzidos</th>
+         <th>Vendidos</th>
+         <th>Produzidos</th>
+         <th>Vendidos</th>
+      </tr>
+   </thead>
+</table>
+<!-- rowspan é para linhas e colspan e para colunas -->
+<h2>Primeiro de tudo iremos criar o nosso table, colocando a descrição com o caption.
+
+   Criaremos o thead para começarmos o nosso cabeçalho, abrimos o tr dentro para linha e colocamos dentro deste tr 3 th,
+   o primeiro sendo vazio.
+
+   Na próxima linha já temos os produzidos e vendidos, com o auxilio do emmet, criamos direto 4 th e colocamos os
+   produzidos e vendidos.
+
+   Notamos que ainda está desorganizado, então usaremos o atributo rowspan="2", na primeira linha, para ocupar 2 linhas,
+   empurrando os elementos para o lado.
+
+   Agora vemos que sobrou 2 colunas vazias, então usaremos o atributo de coluna colspan="2" nas 2 lojas.</h2>
+
+<h1>TBody complexo
+
+</h1>
+
+Veremos como fazer um tbody complexo.
+
+<table>
+   <caption>Produzidos x Vendidos por Loja</caption>
+
+   <thead>
+      <tr>
+         <th rowspan="2"></th>
+         <th colspan="2">Afonso Pena</th>
+         <th colspan="2">Antônia Pereira</th>
+      </tr>
+      <tr>
+         <th>Produzidos</th>
+         <th>Vendidos</th>
+         <th>Produzidos</th>
+         <th>Vendidos</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <th>Vassouras</th>
+         <td>50</td>
+         <td>30</td>
+         <td>20</td>
+         <td>20</td>
+      </tr>
+      <tr>
+         <th>Baldes</th>
+         <td>10</td>
+         <td>10</td>
+         <td>30</td>
+         <td>25</td>
+      </tr>
+   </tbody>
+</table>
+Dando continuidade a nossa tabela, iremos criar o tbody, abrir uma linha com o tr, colocar o nome do produto, porém ele
+será um th, ou seja um cabeçalho, e com a ajuda do emmet criaremos 4 td, para colocarmos o tanto de produtos produzidos
+e vendidos, e repetiremos, mas para outro produto.
+
+<h1>Melhorando o aspecto com colgroup
+
+</h1>
+
+<table>
+   <caption>Produzidos x Vendidos por Loja</caption>
+
+   <colgroup>
+      <col>
+      <col span="2" style="background-color: red">
+      <col span="2" style="background-color: blue;">
+   </colgroup>
+
+   <thead>
+      <tr>
+         <th rowspan="2"></th>
+         <th colspan="2">Afonso Pena</th>
+         <th colspan="2">Antônia Pereira</th>
+      </tr>
+      <tr>
+         <th>Produzidos</th>
+         <th>Vendidos</th>
+         <th>Produzidos</th>
+         <th>Vendidos</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <th>Vassouras</th>
+         <td>50</td>
+         <td>30</td>
+         <td>20</td>
+         <td>20</td>
+      </tr>
+      <tr>
+         <th>Baldes</th>
+         <td>10</td>
+         <td>10</td>
+         <td>30</td>
+         <td>25</td>
+      </tr>
+   </tbody>
+</table>
+<tr>
+   <th rowspan="2"></th>
+
+</tr>
+Colocamos a tag <colgroup></colgroup>, dentro colocamos 3
+<col>, onde na segunda colocamos o atibuto style="background-color: red" e na terceira style="background-color: blue",
+porém ainda está desorganizado por isso colocaremos span="2" para alinharmos a cor com a coluna.
+
+
+<h1>Melhorando acessibilidade
+</h1>
+
+<table>
+   <caption>Produzidos x Vendidos por Loja</caption>
+
+   <colgroup>
+      <col>
+      <col span="2" style="background-color: red">
+      <col span="2" style="background-color: blue;">
+   </colgroup>
+
+   <thead>
+      <tr>
+         <th rowspan="2"></th>
+         <th colspan="2" scope="colgroup">Afonso Pena</th>
+         <th colspan="2" scope="colgroup">Antônia Pereira</th>
+      </tr>
+      <tr>
+         <th scope="col">Produzidos</th>
+         <th scope="col">Vendidos</th>
+         <th scope="col">Produzidos</th>
+         <th scope="col">Vendidos</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <th scope="row">Vassouras</th>
+         <td>50</td>
+         <td>30</td>
+         <td>20</td>
+         <td>20</td>
+      </tr>
+      <tr>
+         <th scope="row">Baldes</th>
+         <td>10</td>
+         <td>10</td>
+         <td>30</td>
+         <td>25</td>
+      </tr>
+   </tbody>
+</table>
+Estaremos usando o atributo scope, que serve permitir que essa acessibilidade saiba que o escopo do cabeçalho é
+relacionado com, o agrupamento, ou a coluna, ou a linha, o atributo é escrito scope="" .
+
+
+<h1>
+   head
+
+</h1>
+
+<head></head> é a parte não visível pelo navegador, onde se faz configurações, contém informações como o título, links
+para o css, para o favicon.
+
+
+
+
+
+<h1>
+
+   Meta
+
+</h1>
+
+Descrição
+Falaremos agora sobre a tag
+<meta> , ela serve para definir metadados, como codificação de caracteres especiais e portabilidade para dispositivos
+mobiles.
+
+<head>
+   <!-- codificação de caracteres especiais -->
+   <meta charset="UTF-8">
+
+   <!-- portabilidade para dispositivos mobiles -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+Meta normalmente virá com o atributo name para especificar a meta, content para conteúdo, mas há também como o atributo
+charset, para caracteres especiais.
+
+<h1>
+   Favicon
+</h1>
+Favicon
+Descrição
+Favicon é uma abreviação para "favorite icon", refere-se aos ícones dos favoritos a alguns anos atrás, mas nos dias de
+hoje acabou ficando este termo, antigamente ele era por 16 pixeis, porém com o avanço da tecnologia isso mudou.
+
+Para colocarmos o ícone usaremos a tag
+<link> com o atributo rel="icon", que seria para representar relação, no caso a tag link vai conter um ícone, depois o
+href para mostrar onde está o ícone.
+
+<!--
+    <link> para ícones personalizados
+-->
+
+<!-- favicon básico -->
+<link rel="icon" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+<!-- iPhone não-Retina, iPod Touch e dispositivos Android 2.1+: -->
+<link rel="apple-touch-icon-precomposed" href="https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png">
+
+<!-- iPad de primeira e segunda geração: -->
+<link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+<link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+<link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+<!-- iPhone com tela retina de alta resolução: -->
+<link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+<!-- iPad de terceira geração com tela retina de alta resolução: -->
+<link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+<link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+<link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+<link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=cfca599cb367ccaf7377d56ddc7542f5" />
+
+
+
+<h1>
+   Meta SEO
+
+</h1>
+
+Descrição
+Veremos agora das metas que são importantes para SEO(Search Engine Optimization ou motores de busca, como o google).
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+Esses já vimos anteriormente.
+
+<meta name="author" content="Mayk Brito">
+Temos também o de autor, para definir o autor da página, para possuirmos propriedade sobre a página.
+
+<meta name="description" content="Um website para iniciantes em programação">
+Este meta é usado para descrição de sites, caso você não tenha esse meta, o navegador irá procurar qualquer texto seu,
+mas muito melhor escolher o que você quer que apareça.
+
+<meta name="robots" content="index, follow">
+Esse meta diz para o robô do google o que queremos que ele faça, ele é responsável por colocar os resultados da busca ,
+por exemplo. É possível dizer ao robô seguir links na página, através do follow, ou o contrário com o nofollow , ou
+"indexar" a página, através do index, ou no index.
+
+<h1>
+   Meta Social
+
+</h1>
+
+Descrição
+Existem metadados personalizados por empresas de redes sociais, como Facebook, que criou o Open Graph, que é um tipo de
+metadado se quisermos colocar um tipo de conteúdo especial, caso queiramos compartilhar o link da nossa página no
+Facebook.
+
+<head>
+   <!-- Open Graph: facebook -->
+   <meta property="og:image" content="https://cdn-images-1.medium.com/max/92/1*TkXVfLTwsHdwpUEjGzdi9w@2x.jpeg">
+   <meta property="og:description" content="Aqui vem um texto para ser mostrado ao compartilhar no facebook">
+   <meta property="og:title" content="Um site da Rocketseat">
+
+   <!-- twitter -->
+   <meta name="twitter:title" content="Rocketseat">
+</head>
+São exemplos de metadados, que o Facebook procura na hora que compartilhamos a nossa página, como imagens, descrição,
+texto e outros.
+
+O Twitter usa o atributo name diferente do Facebook que resolveu usar o property .
+
+
+
+<h1>
+   Conhecendo o CSS
+
+</h1>
+
+Descrição
+Começaremos nossa introdução pelo que exatamente quer dizer CSS, que é um acrônimo para Cascading Style Sheet, uma forma
+de escrever uma folha de estilos em cascata, mas ainda precisamos saber o que exatamente é uma folha de estilos e uma
+cascata, mas falaremos disso mais pra frente.
+
+O CSS é um código para criar estilos no HTML, que como vimos, é a estrutura de todo o documento, já o CSS seria a
+beleza, a parte bonita.
+
+CSS não é uma linguagem de programação, é uma linguagem style sheet, pois mesmo não sendo de programação, ainda possui
+uma ideia de sintaxe, e assim, precisamos aprender a forma correta de se escrever.
+<h2>
+   https://codepen.io/pen
+</h2>
+
+
+<h1>
+   Comentários
+
+</h1>
+
+Descrição
+Os comentários no css não irão afetar seu código, mas pode nos ajudar a lembrar de blocos de códigos ou agrupar e
+organizar nosso código, deixa dicas para a leitura e ajuda os outros a entenderem nosso código.
+
+Apenas não esqueça de fechar um comentário aberto.
+
+Os comentários abrem com /* e terminam com */ .
+
+Você também pode usar um comentário para desabilitar partes do seu código, o que possibilitaria um debug mais fácil, ou
+caso deseje fazer alguma alteração sem quebrar todo o seu código.
+
+<h1>
+   Abertura
+</h1>
+
+Nestas próximas aulas, vamos ver os fundamentos do CSS, como funciona, o que é o CSS afinal de contas, conceitos básicos
+como cascatas, especificidade, box model e muito mais.
+
+Para consumir esse curso, é interessante que você já tenha um conhecimento de HTML.
+
+Vamos embarcar nessa jornada?
+
+<h1>
+   Anatomia
+</h1>
+
+
+Descrição
+Nesta aula, falaremos sobre a anatomia do CSS, como criar esse CSS para poder alterar algum elemento do HTML.
+
+Na verdade, é bem simples, temos o nome de algum elemento, uma chave aberta e uma fechada embaixo, e no meio vamos ter
+propriedades e seus valores.
+
+Toda propriedade é seguida de : (dois pontos) e um valor e um ; (ponto e vírgula) para encerrar essa ideia de valor.
+
+Abaixo um exemplo de CSS:
+
+h1 {
+color: blue;
+font-size: 60px;
+background: gray;
+}
+Os elementos do CSS são então:
+
+Selectors: Nesse caso o h1, que vai buscar no HTML a tag h1 e aplicar as mudanças.
+
+Declaration: As chaves e tudo dentro delas.
+
+Properties: As coisas a serem alteradas.
+
+Property values: Os novos valores que estamos atribuindo a tais propriedades.
+
+
+<h1>
+   Anatomia
+</h1>
+Descrição
+Nesta aula, falaremos sobre a anatomia do CSS, como criar esse CSS para poder alterar algum elemento do HTML.
+
+Na verdade, é bem simples, temos o nome de algum elemento, uma chave aberta e uma fechada embaixo, e no meio vamos ter
+propriedades e seus valores.
+
+Toda propriedade é seguida de : (dois pontos) e um valor e um ; (ponto e vírgula) para encerrar essa ideia de valor.
+
+Abaixo um exemplo de CSS:
+
+h1 {
+color: blue;
+font-size: 60px;
+background: gray;
+}
+Os elementos do CSS são então:
+
+Selectors: Nesse caso o h1, que vai buscar no HTML a tag h1 e aplicar as mudanças.
+
+Declaration: As chaves e tudo dentro delas.
+
+Properties: As coisas a serem alteradas.
+
+Property values: Os novos valores que estamos atribuindo a tais propriedades.
+
+<h1>
+   Seletores
+</h1>
+
+Descrição
+Os seletores são o que conectam um elemento HTML com o CSS, existem vários tipos, inclusive, nós vimos um na última
+aula, o Element/Type selector, mas também temos o seletor global, que é um * (asterisco), ID selector, que é #
+(cerquilha, cardinal) e o ID do elemento HTML, class selector, que é um . (ponto) e o nome da classe, e mais alguns que
+podemos entender mais tarde no curso.
+
+Os seletores que mais usaremos serão realmente apenas os anteriormente citados, e vamos entrar em exemplos de como
+usá-los:
+
+HTML
+<div id="container" class="m-40">
+   <h1>Título</h1>
+   <h2>Subtitulo</h2>
+</div>
+CSS
+/* ID selector */
+#container {
+width: 200px;
+}
+
+/* Class selector */
+.m-40 {
+margin: 40px;
+}
+
+/* Element/Type selector + Agrupamento de seletores */
+h1, h2 {
+color: blue;
+font-size: 60px;
+background: gray;
+}
+
+<h1>
+   Box model
+
+
+</h1>
+Descrição
+Nesta aula falaremos sobre o conceito de caixas, já que o CSS trabalha com essa ideia de caixas, ou seja, o box model.
+Mas o quê exatamente é esse box model?
+
+É uma caixa retangular. Essa caixa possui as mesmas propriedades de uma caixa 2D, e tem como propriedades:
+
+Tamanho (largura x altura): width e height, respectivamente
+Conteúdo: o content
+Bordas: o border
+Preenchimento interno: o padding
+Espaços fora da caixa: a margin
+Quase todo elemento de uma página é considerado uma caixa: Posicionamentos, tamanhos, espaçamentos, bordas, cores,
+então, em suma, elementos HTML são caixas, assim como quase tudo no CSS.
+
+são caixas
+
+
+<h1>
+   Origem do CSS
+
+</h1>
+
+
+Descrição
+Vamos primeiro aprender a adicionar um estilo no nosso documento HTML, certo?
+
+Começaremos pelo inline, que é dentro do próprio HTML, através da tag style, utilizada das seguintes formas:
+
+<h1 style="color: blue;">Título
+   <strong style="color: red;">alo</strong>
+</h1>
+Ou na head do HTML, assim:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      h1 {
+         color: blue;
+      }
+
+      strong {
+         color: red;
+      }
+   </style>
+</head>
+Porém, a forma mais comum, é através da tag link, onde vamos linkar um documento CSS externo, um outro arquivo para
+nosso documento HTML, feito da seguinte forma:
+
+<link rel="stylesheet" href="style.css">
+Neste caso, o nosso documento CSS se chama style.css e sua relação com o HTML é de stylesheet.
+
+A última forma é através do @import, que é na verdade uma regra do CSS, portanto, deve ser usada dentro do css, ao invés
+de dentro do HTML, como as duas primeiras formas, e seu uso é mostrado a seguir:
+
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'
+Não é recomendado seu uso, pois leva um pouco mais de tempo do que através da tag link, fazendo a página ficar menos
+responsiva, demorando mais para o carregamento da mesma.
+
+<h1>
+   A Cascata
+
+</h1>
+Descrição
+A escolha do browser de qual regra aplicar, caso haja muitas regras para o mesmo elemento.
+
+Seu estilo é lido de cima para baixo, ou seja, caso haja algum selector com informações conflitantes, o mais embaixo é o
+que será atribuído.
+São levados em consideração 3 fatores:
+
+A origem do estilo;
+
+A especificidade;
+
+A importância;
+
+<h1>
+   Especificidade
+</h1>
+
+Descrição
+É um cálculo matemático, onde cada tipo de seletor e origem do estilo possuem valores a serem considerados.
+
+Os mais fracos são universal selector, combinators e negation pseudo-class, com o valor de 0. Em seguida, com valor de
+1, são os element type selector e pseudo-elements.
+
+Também temos os classes e attribute selectors, com valor de 10, ou seja, são mais fortes que os anteriores.
+
+O segundo mais forte, ID selector, com um valor de 100, vence todos os selectors anteriores.
+
+Por fim, temos o inline, com o valor 1000, quaisquer desses selectors anteriormente citado
+
+
+0. universal selector, combinator e negation pseudo-class (:not())
+1. element type selector e pseudo-elements (::before, ::after)
+10. Classes e atribute selectors ([type="radio"])
+100. id selector
+1000. inline
+
+
+<h2>
+   Regra important
+</h2>
+
+Descrição
+sintaxe: !important
+
+São raras as ocasiões nas quais se devem usar um iportant, pois é em geral uma má pratica, visto que quebra o fluxo
+natural da cascata e pode acabar te atrapalhando caso você a deixe em algum lugar no seu código.
+
+Portanto evite ao máximo seu uso.
+
+<h1>At rules</h1>
+
+Descrição
+São regras relacionadas ao comportamento do CSS, começa com um sinal de @ seguido do identificador e do valor.
+
+São as seguintes:
+
+@import serve para incluir um CSS externo.
+@media são regras condicionais para vários dispositivos.
+@font-face é para colocar fontes externas.
+@keyframes serve para as animations do CSS.
+
+<!-- exemplos
+
+- @import        / incluir um css externo /
+
+- @media        /regras condicionais para dispositivos/
+
+- @font-face               /fontes externas/
+
+- @keyframes               /animation/
+
+-->
+
+<h1>
+   Shorthand
+</h1>
+
+Descrição
+É basicamente a ideia de junção de propriedades, para que fiquem de forma resumida e legível.
+
+Abaixo um exemplo de propriedades com e sem o shorthand:
+
+{
+/* background properties */
+background-color: #000;
+background-image: url(images/bg.gif);
+background-repeat: no-repeat;
+background-position: left top;
+
+/* background shorthand*/
+background: #000 url(images/bg.gif) no-repeat left top;
+
+/* font properties */
+font-style: italic;
+font-weight: bold;
+font-size: .8em;
+line-height: 1.2;
+font-family: Arial, sans-serif;
+
+/* font shorthand */
+font: bold italic .8em/1.2 Arial, sans-serif;
+}
+Algumas das características do shorthand:
+
+Não irá considerar propriedades anteriores, ou seja, caso faça um shorthand, apenas ele será considerado, quaisquer
+propriedades anteriores serão substituídas pelas do shorthand.
+
+Os valores que não forem especificados irão assumir o valor padrão.
+
+Por fim, geralmente, a ordem descrita não importa, mas, caso haja muitas propriedades com valores semelhantes, poderemos
+encontrar problemas.
+
+<h1>
+   Funções
+</h1>
+<!-- 
+Descrição
+Um tipo de valor existente no CSS, é estruturado com um nome seguido de abre e fecha parênteses.
+
+Recebe um argumento, que são seus valores.
+
+Um exemplo de função é:
+
+color: rgb(255,0,100); -->
+
+
+
+<h1>
+   
+   DevTools
+</h1>
+
+Descrição
+Uma das ferramentas mais importantes para o desenvolvedor CSS é o DevTools (do inglês, Ferramentas de Desenvolvedor), é
+recomendado que você estude e faça uso da mesma, pois será muito utilizada.
+
+<h1>
+   Cuidados com a escrita
+</h1>
+
+Descrição
+É importante prestar atenção à sua escrita do CSS, identar seu código para facilitar a leitura, e mais importante,
+manter tudo organizado e funcionando!
+
+<h1>
+   Vendor prefixes
+</h1>
+
+<!-- Descrição
+São coisas que permitem que browsers adiocionem features a fim de colocar em uso alguma novidade que vemos no CSS.
+
+Exemplos:
+
+p {
+	-webkit-background-clip: text; /*Chrome, Safari, iOS e Android*/
+	-moz-background-clip: text; /* Mozilla (Firefox) */
+	-ms-background-clip: text; /* Internet Explorer ou Edge*/
+	-o-background-clip: text; /* Opera */
+Você também pode consultar se a feature pode ser utilizada através dos sites:
+
+https://ireade.github.io/which-vendor-prefix
+
+https://caniuse.com
+
+ -->
+
+
+
+ <h1>
+   Introdução
+ </h1>
+
+ Descrição
+Nessa aula vamos falar sobre valores e unidades de medidas no CSS e como podemos usar a documentação do MDN para aprender mais.
+
+Valores e unidades de medidas
+Cada propriedade possui valores property: value
+Estudo constante a fim de entender as propriedades e seus valores
+Na prática
+Como conhecer e estudar os valores na documentação?
+<color> <length>
+Os termos podem variar values ou data types
+Documentação MDN: https://developer.mozilla.org/en-US/
+
+
+<h1>
+   Tipos numéricos e unidades comuns
+
+</h1>
+
+Descrição
+Nessa aula vamos falar sobre tipos numéricos.
+
+Tipos numéricos
+<integer> - número inteiro como -10 ou 223
+<number> - número decimal como -2.4, 64 ou 0.234
+<dimension> - é um <number> com uma unidade junto: 90deg, 2s, 8px
+<percentage> - representa uma fração de outro número: 50%
+Unidades comuns
+<length> - é um dos mais usados no CSS e representa um valor de distância: px, em, vw
+<angle> - representa um ângulo: deg, rad, turn
+<time> - representa um tempo: s, ms
+<resolution> - representa resoluções para dispositivos: dpi
+
+
+
+   <H1>
+
+      Distâncias absolutas e relativas
+
+   </H1>
+
+   Descrição
+Nessa aula vamos entender sobre distâncias absolutas e relativas.
+
+Distâncias absolutas <length>
+São fixas e não alteram seu valor.
+
+| Unidade  | Nome                | Equivalência         |
+|----------|---------------------|----------------------|
+| cm       | Centímetros         | 1cm = 96px/2.54      | 
+| in       | Inches (polegadas)  | 1in = 2.54cm = 96px  | 
+| px       | Pixels              | 1px = 1/96th of 1in  |
+*o mais comum e mais utilizado é o px
+
+*não é recomendado usar cm
+
+Distâncias relativas
+São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.
+Benefício: Maior adaptação aos diferentes tipos de tela.
+| Unidade  | Relativo a                                    |
+|----------|-----------------------------------------------|
+| em       | Tamanho da font do elemento pai               |
+| rem      | Tamanho da font do elemento raiz (root/html)  | 
+| vw       | 1% da viewport wid    (largura)               |  
+| vh       | 1% da viewport height  (altura)               |
+Normalmente o tamanho da font padrão do navegador é de 16px e para mudar esse valor temos que fazer a alteração no root ou no elemento html.
+:root {
+	font-size: 18px;
+}
+
+/* OU */
+
+html {
+	font-size: 18px;
+}
+O viewport é a parte da tela que está sendo exibida. No caso dos navegadores web, é o que é exibido na janela/tela do
+documento. Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll da área de visualização.
+
+
+<h1>
+   Porcentagens
+</h1>
+
+<h2>Descrição</h2>
+
+As porcentagens são valores bem flexíveis
+Em muitos casos é tratado da mesma maneira que as distâncias <length>
+Sempre será relativo a algum valor
+💻 Exemplo
+Relativo ao elemento pai
+
+<ul>
+	<li>One</li>
+	<li>Two</li>
+	<li>Three
+		<ul>
+			<li>Three A</li>
+			<li>Three B</li>
+			<ul>
+				<li>Three B 2</li>
+			</ul>
+		</ul>
+	</li>
+</ul>
+li {
+    font-size: 80%;
+}
+
+
+<h1>
+   Position
+</h1>
+
+<h2>Descrição</h2>
+
+Posições
+<position>
+
+Representa um conjunto de coordenadas 2D:
+top, right, bottom, left e center
+Usado para alguns tipos de propriedades como o background-position
+Não confundir com a propriedade position
+
+<h3>Exemplo</h3>
+
+<!-- <div class="box"></div>   = .box -->
+
+<div class="box"></div>
+
+ai no css 
+
+.box {
+   height: 300px;
+   width: 400px;
+   background-image: url(http://source.unsplash.com/random);
+   background-repeat: no-repeat;
+   background-position: top left 
+
+}
+
+<h1>  
+   Funções
+</h1>
+
+<h2>descrição</h2>
+
+Nessa aula vamos falar sobre funções no CSS.
+
+Funções
+Em programação, funções são reconhecidas por causar um reaproveitamento de código.
+Exemplos de funções do CSS:
+
+rgb(0 a 255)
+hsl(0 a 255)
+url(vai dereto pra url)
+calc(calcula  exemplo calc( 100% - 40px = ele vai ocupa toda a pagina menos a parte de baixo q seria os 40 px))
+Dentro dos parêntesis são passados argumentos
+
+Link da documentação do MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions
+
+<h1>  
+   Strings e identificadores
+</h1>
+
+<h2>descrição</h2>
+
+Descrição
+Strings: texto envolto em aspas
+.box::after {
+	content: "Isso é uma string"
+}
+Identificadores: podemos ter nomes de cores como red, black, gold
+
+a aspas no css pode ser usada para escrever um texto sobre a imagem com o after como função alia
+
+
+
+<h1>
+   Box dentro da box
+</h1>
+
+<h2>Descrição</h2>
+
+Nesse curso vamos aprender como funciona o Box Model, espaçamentos, preenchimentos, bordas, além dos display-block e
+display-inline. Esses são conceitos base que vão te ajudar a evoluir muito no CSS.
+
+<h1>Introdução</h1>
+
+<h2>DESCRIÇÃO</h2>
+
+O Box Model é fundamental para fazer layouts para web porque ele vai te dar maior facilidade na hora de aplicar o CSS. Ao entender os conceitos do Box Model muitas questões do CSS começam a fazer sentido.
+
+O que é o Box Model?
+Cada elemento é representado como uma caixa retangular
+Essa caixa possui propriedades de uma caixa em 2 dimensões (largura x altura)
+Propriedades da caixa
+Tamanho (largura x altura) → width | height
+Conteúdo → content
+Bordas → border
+Preenchimento interno → padding
+Espaços fora da caixa → margin
+
+<img src="imagem exemplo das box.png">
+
+<h1>
+   Box Sizing
+</h1>
+
+<h2>Descrição
+</h2>
+
+Nessa aula vamos ver sobre o box-sizing que é o responsável pelo calculo do tamanho total da caixa (box).
+
+Podemos usar a ferramenta de desenvolvedor do próprio navegador para visualizar as especificações dos elementos da página
+
+<img src="https://xesque.rocketseat.dev/forum/1630331307131-image.png" >
+
+💻 Exemplo:
+HTML:
+
+<div>
+	CSS é incrível!
+</div>
+CSS:
+
+div {
+   width: 100px; 
+   height: 100px;
+   border: 1px solid red;
+   margin: 10%;
+}
+Esse é o resultado obtido ao usar o código acima:
+
+<img src="https://xesque.rocketseat.dev/forum/1630331327738-image.png" alt="">
+
+Quando o padding é adicionado (padding: 0 20px;) faz com que aumente a largura da caixa, deixando de respeitar os 100px de largura:
+
+<img src="https://xesque.rocketseat.dev/forum/1630331344721-image.png" alt="">
+
+E é por isso que é tão importante conhecer a propriedade do box-sizing.
+
+Por padrão o navegador vai calcular o tamanho da caixa pelo content-box e vai somar com os outros boxes, no exemplo acima no lugar de 100px a caixa vai ficar com uma largura de 140px. Para que isso não aconteça, é possível mudar qual vai ser a referência para o calculo do tamanho da caixa adicionando a propriedade box-sizing: border-box;.
+
+Dessa forma o elemento vai ficar com a largura (width) determinado, que no caso do exemplo citado é de 100px.
+
+<img src="https://xesque.rocketseat.dev/forum/1630331360926-image.png" alt="">
+
+Normalmente usa-se o código abaixo como forma de "resetar" o box-sizing que vem por padrão nos navegadores.
+
+* {
+   box-sizing: border-box;
+}
+O seletor * seleciona todos os elementos da página.
+
+<h1>
+   Display-block-inline
+
+</h1>
+
+<h2>Descrição
+
+</h2>
+
+display: block; vs display: inline;
+Como as caixas se comportam em relação as outras caixas
+Comportamento externo das caixas
+
+Display Block
+Ocupa toda a linha, colocando o próximo elemento abaixo desse
+
+<img src="https://xesque.rocketseat.dev/forum/1630331612162-image.png" alt="">
+
+width e height são respeitados
+<img src="https://xesque.rocketseat.dev/forum/1630331630563-image.png" alt="">
+
+padding, margin, border irão funcionar normalmente
+
+
+<img src="https://xesque.rocketseat.dev/forum/1630331645405-image.png" alt="">
+
+<p> <div> <section>, todos os headings <h1> <h2>...
+   Display Inline
+   Os elementos ficam ao lado do outro e não empurram outros elementos para baixo
+   <img src="https://xesque.rocketseat.dev/forum/1630331668706-image.png" alt="">
+
+   width e height não funcionam
+
+   <img src="https://xesque.rocketseat.dev/forum/1630331684494-image.png" alt="">
+
+   Somente valores horizontais de margin
+<img src="https://xesque.rocketseat.dev/forum/1630331713656-image.png" alt="">
+
+
+
+
+
+   <h1>
+      Margin
+   </h1>
+
+   <h2>  Descrição</h2>
+
+   Margin, é o espaço (margem) entre os elementos
+
+Podemos dividir o margin em 4 valores:
+
+/* margin-top | margin-right | margin-bottom | margin-left */
+values: <length> | <percentage> | auto
+
+Geralmente usamos uma forma abreviada (shorthand) para escrever o margin. Esse formato segue o sentido horário iniciando pelo top, seguindo para right, bottom e left.
+
+margin: 12px 16px 10px 4px; /* TOP = 12px | RIGHT = 16px | BOTTOM = 10px | LEFT = 4px */
+margin: 12px 16px 0; /* TOP = 12px | RIGHT = 16px | BOTTOM = 0px | LEFT = 16px */
+margin: 8px 16px; /* TOP = 8px | RIGHT = 16px | BOTTOM = 8px | LEFT = 16px */
+margin: 8px; /* TOP = 8px | RIGHT = 8px | BOTTOM = 8px | LEFT = 8px */
+O margin é aplicado em elementos com display block
+Cuidado com o margin collapsing que é quando o top se junta ao bottom
+
+
+
+<h1>Padding</h1>
+
+<h2>Descrição</h2>
+
+O padding é o preenchimento interno da caixa.
+
+A propriedade padding pode ser escrita como nos formatos apresentados abaixo:
+
+padding-top | padding-right | padding-bottom | padding-left
+Geralmente usamos uma forma abreviada (shorthand) para escrever o padding. Esse formato segue o sentido horário iniciando pelo top, seguindo para right, bottom e left.
+
+padding: 12px 16px 10px 4px; /* TOP = 12px | RIGHT = 16px | BOTTOM = 10px | LEFT = 4px */
+padding: 12px 16px 0; /* TOP = 12px | RIGHT = 16px | BOTTOM = 0px | LEFT = 16px */
+padding: 8px 16px; /* TOP = 8px | RIGHT = 16px | BOTTOM = 8px | LEFT = 16px */
+padding: 8px; /* TOP = 8px | RIGHT = 8px | BOTTOM = 8px | LEFT = 8px */
+O padding pode ter valores (values) de comprimento (px, em, rem) ou de porcentagem (%)
+
+O padding poderá causar diferença na largura de um elemento
+obs.: Na aula sobre box-xizing aprendemos como resolver essa diferença na largura do elemento
+
+https://app.rocketseat.com.br/node/uma-caixa-dentro-da-outra/lesson/box-sizing
+
+
+
+<h1>Border-outline
+</h1>
+
+<h2>Descrição</h2>
+
+São as bordas da caixa
+
+Documentação do MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/border
+
+value: <border-style> | <border-width> | <border-color>
+
+style: solid | dotted | dashed | double | groove | ridge | inset | outset
+width: <length>
+color: <color>
+div {
+	/* shorthand */
+	border-top: solid 2px; /* top | right | bottom | left */
+
+	/* style */
+	border: solid;
+
+	/* width <length> | style */
+	border: 2px dotted;
+
+	/* style | color */
+	border: outset #f33;
+
+	/* width | style | color */
+	border: medium dashed green;
+
+}
+E o outline?
+O outline é muito semelhante ao border, mas difere em 4 sentidos:
+Não modifica o tamanho da caixa, pois não é parte do Box Model
+Poderá ser diferente de retangular
+Não permite ajuste individuais
+Mais usado pelo user agent para acessibilidade
+
+<h1>Cores</h1>
+
+Cores
+Usamos CSS para alterar cores do nosso documento.
+
+Tipos
+background-color (para caixas)
+color (para textos)
+border-color (para caixas)
+outros
+Valores
+Podemos definir valores por:
+
+palavra-chave (blue, transparent)
+hexadecimal (#990011)
+funções: rgb, rgba, hsl, hsla
+
+<h1>
+   Keyword named values
+
+</h1>
+
+Nessa aula vamos entender as bases de como aplicar cores no CSS.
+
+HTML
+
+<div>
+    <h1>Um texto aqui</h1>
+    <p>Mais texto</p>
+</div>
+CSS
+
+div {
+    color: blue;
+}
+
+h1 {
+    color: red;
+}
+
+<h2>
+   Hexadecimal
+
+</h2>
+
+Nessa aula vamos aprender a trabalhar com valores hexadecimal
+
+/*<hex-color> values 0-9 e A-F*/
+color: #090; /* RED, GREEN, BLUE */
+color: #009900;
+color: #090a;
+color:#009900aa;
+
+ <h2>
+   RGB
+ </h2>
+
+ RGB → Red, Green e Blue
+O alpha representa a transparência da cor
+/*<rgb()> values */
+color: rgb(34, 12, 64, 0.6) /* 0-255 */
+color: rgba(34, 12, 64, 0.6)
+
+<h2>
+   HSL
+</h2>
+HSL → Hue - Saturation - Lightness
+
+color: hsl(180, 100%, 50%, 60%)
+color: hsla(180, 100%, 50%, 60%)
+
+<h2>
+   Global values
+
+</h2>
+
+Nessa aula vamos ver sobre os valores globais da propriedade color.
+
+/* Global values */
+color: inheritr; /* Herda a cor do elemento anterior */
+color: initial; /* Volta a sua cor inicial */
+color: unset; /* Pega a cor do contexto */
+
+
+
+<h2>
+   Conclusão
+</h2>
+
+Referência
+https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+
+
+
+
+
+
+<h1>Background</h1>
+
+Define um fundo para nosso elemento
+Sua área de atuação é a caixa toda
+Por padrão, é transparente
+Exemplos
+Usar cores solidas
+Usar imagens
+Controlar
+a posição das imagens
+se elas se repetem ou não
+o tamanho delas na caixa
+Usar cor e imagem juntas
+Usar cor gradiente
+
+<h2>
+   Background-color
+</h2>
+
+Descrição
+A propriedade background-color define a cor de fundo do elemento selecionado.
+
+HTML
+
+<header>
+
+</header>
+<main>
+    <h1>Evolua rápido com a tecnologia</h1>
+    <p>Junte-se a milhares de devs e acelere
+    na direção dos seus objetivos</p>
+</main>
+CSS
+
+* {
+    margin: 0;
+}
+
+header {
+    height: 100px;
+    border: 7px dashed red;
+    background-color: rgb(55, 100, 50);
+}
+
+<h2>
+   Background-image-repeat
+</h2>
+
+Descrição
+Para adicionar uma imagem como background podemos usar a propriedade background-image
+Por padrão a imagem vai se repetir e podemos modificar essa opção usando a propriedade background-repeat
+/* Values */
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+background-repeat: repeat;
+background-repeat: space;
+background-repeat: round;
+background-repeat: no-repeat;
+
+/* Podedmos usar 2 valores: horizontal | vertical */
+background-repeat: repeat space;
+background-repeat: repeat repeat;
+background-repeat: round space;
+background-repeat: no-repeat round;
+
+<h2>Background-position
+</h2>
+Descrição
+Com a propriedade background-position podemos mudar a posição da imagem do background.
+
+/* Pricipais valores */
+background-position: top;
+background-position: bottom;
+background-position: left;
+background-position: right;
+background-position: center;
+
+
+<h2>
+   Background-size
+</h2>
+
+Descrição
+Para mudar o tamanho da imagem do background usamos a propriedade background-size.
+
+/* Values */
+background-size: cover;
+background-size: contain;
+
+<h2>
+   Background-origin-clip
+</h2>
+
+Descrição
+A propriedade background-origin é quem define o ponto de origem de uma imagem específica.
+/* Principais valores */
+background-origin: border-box;
+background-origin: padding-box;
+background-origin: content-box;
+O background-clip define se a cor ou imagem do background iniciam debaixo de sua área de borda, preenchimento ou conteúdo.
+/* Principais valores */
+background-clip: border-box;
+background-clip: padding-box;
+background-clip: content-box;
+background-clip: text;
+
+<h2>
+   background-attachment = deixar a imagem de fundo ou mexenedo ou parada
+</h2>
+
+Descrição
+A propriedade background-attachment determina se a posição da imagem vai ser fixa ou se vai rolar junto com o conteúdo.
+
+/* Principais valores */
+background-attachment: scroll;
+background-attachment: fixed;
+background-attachment: local;
+
+<h2>
+   Shorthand 
+</h2>
+Descrição
+Podemos usar o shorthand background para definir todos os valores do Background( na chave background voce conseguel
+colocar todos os outros value porem tem q usar a "/" para separar alguns especificos, e espaço)
+
+<h2>  
+   Gradient
+</h2>
+
+Descrição
+linear-gradient() é a função usada para criar gradient linear com o CSS.
+background: linear-gradient(45deg, red, yellow)
+radial-gradient() é a função usada para criar gradient circular.
+background: radial-gradient(green, red, yellow)
+background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 0, 0, 0.2))
+(esse é o comando para fazer uma especie de paleta de cores em um lugar só)
+
+<h2>
+   Múltiplos valores
+</h2>
+Descrição
+Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor sólida, gradiente ou imagem. Para isso basta separar por vírgula cada background.
+
+<h1>
+   Posso ver e ouvir o HTML
+
+</h1>
+
+
+<h2>
+   Vídeo/Áudio/Iframe
+</h2>
+
+<video src="" controls>
+   <source src="" type="video/mp4">  
+   <p>este brauser n suporta video baixe aki</p>
+
+   
+   se não funciona depois de voce colocar o video voce tenta colocar o controls dentro da tag se n funcionar novamente 
+
+   caso tenha duvida procura no mdn  media type and format guide
+
+
+   do audio eu consigo usar o soundcloud para não sobrecarregar o servidor
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/JnuEepWcdi0" 
+   title="YouTube video player" 
+   frameborder="0" 
+   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+é para trazer os conteudos externos e no mdn é so procurar por  iframe 
+   
+
+
+   
+</video>
+
+<h2>Images 
+
+</h2>
+
+<img src="http:// source.unsplash.com/random" 
+
+alt="cu"
+title="colocar um titulo na imagem"
+height="250px"
+>
+background-image pe com a tag style somente para estilo e não é semantico falta o significado
+<p>
+   style= background-image: tantanta
+</p>
+
+
+<h2>criando titulo visivel para a as imagems</h2>
+
+<figure>
+   <a href="http://google.com">
+      <img src="http://source.unsplash.com/random" alt="imagem do title" height="250px"
+      >
+   
+
+   <figcaption> colocar um titulo na imagem </figcaption>
+
+</figure>
+</a>
+
+
+<h2>
+   Intro de SVG
+
+</h2>
+<h3>SVG é uma marcação estilo html mas n é para textos e sim para fazer imagems
+   possuimos elementos para gerar formas </h3>
+   <ol><li>imagem rasterizada x imagem vetorizada</li>
+         <li>rasterizada e pixel  x  imagem por algoritimo</li>
+      </ol>
+   
+<ol>
+   <h1>Benefícios</h1>
+      
+         <ol>mais legívelmais detalhada
+            maior acessibilidade e SEO</ol>
+            <ol>pode ser editada via css ou atributos</ol>
+</ol>
+
+<ol>
+<h1>desvantagem</h1>
+<ol>pode ser mais complicada de trabalhar</ol>
+<ol>quanto mais complexa a imagem, mais trabalho para navegador</ol>
+<ol>navegadores mais antigos não possuem suporte a essa tag</ol>
+</ol>
+
+
+<a href="http://figma.com">
+<figure>
+
+<img src="http://source.unsplash.com/random" alt=" figma.com"
+height="250px"
+>
+</figure>
+</a>
+
+
+<h1>
+   SVG na prática
+</h1>
+
+<ol>
+   <ol>
+      exemplo
+   </ol>
+</ol>
+<h1>
+<svg width="200" heigt="200">
+<circle cx="60" cy="70" r="40" stroke="black"
+stroke-width="8" fill="
+red"/>>
+
+<!-- no mdn procurar  ---------- svg  -->
+
+<h2>fim xD</h2>
+
+
